@@ -1,0 +1,36 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "32BLIT_DIR",
+          "value": "C:/vs/32blit-sdk-master",
+          "type": "PATH"
+        }
+      ]
+    },
+    {
+      "name": "32Blit-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "cmakeToolchain": "C:/vs/32blit-sdk-master/32blit.toolchain",
+      "inheritEnvironments": [ "gcc-arm" ],
+      "environments": [ { "PATH": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Linux\\gcc_arm\\bin;C:\\Windows\\system32" } ],
+      "intelliSenseMode": "linux-gcc-arm"
+    }
+  ]
+}

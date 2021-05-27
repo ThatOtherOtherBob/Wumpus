@@ -1,0 +1,10 @@
+title: Hunt the Wumpus
+description: Text Based Adventure
+author: LBob
+splash:
+  file: assets/wumpus-image.png
+icon:
+  file: assets/wumpus-icon.png
+version: v1.0.0
+category: game
+url: https://github.com/32blit/32blit-boilerplate
